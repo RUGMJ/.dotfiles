@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+ignored_directories=("./" "./.git")
+
+git submodule init
+git submodule update
+
+packages=($(find ./ -maxdepth 1 -type d))
+
+for package in "${packages[@]}"; do
+    if [[ ! " ${ignored_directories[@]} " =~ " $package " ]]; then
+        package_name="${package#./}"
+        stow -v "$package_name"
+    fi
+done
