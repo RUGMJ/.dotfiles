@@ -1,3 +1,6 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = https://github.com/RUGMJ/nvim.git
+[submodule "led-controller/led-controller"]
+	path = led-controller/led-controller
+	url = https://github.com/RUGMJ/led-controller.git
