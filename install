@@ -2,6 +2,11 @@
 
 ignored_directories=("./" "./.git")
 
+if ! command -v stow &> /dev/null; then
+    echo "Error: 'stow' binary not found. Please install stow before running this script."
+    exit 1
+fi
+
 git submodule init
 git submodule update
 
