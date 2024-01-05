@@ -11,6 +11,7 @@ alias la="exa --icons -a"
 alias ledc="led-controller"
 alias cat="bat"
 alias math="qalc"
+alias n="nvim"
 
 export THEOS_DEVICE_IP=192.168.1.186
 
