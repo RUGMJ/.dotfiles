@@ -1,4 +1,4 @@
 [D-BUS Service]
 Name=dev.rugmj.LedController
-Exec=/home/rugmj/Development/led-controller/target/debug/led-controller
+Exec=/home/rugmj/led-controller/target/release/led-controller
 User=rugmj
