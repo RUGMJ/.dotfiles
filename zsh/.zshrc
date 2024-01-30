@@ -17,7 +17,7 @@ export THEOS_DEVICE_IP=192.168.1.186
 
 export PATH=$PATH:/home/rugmj/.cargo/bin
 
-eval $(thefuck --alias)
+alias fuck='if ! declare -f fuck &>/dev/null; then eval -- "$(thefuck -a)"; fi && fuck'
 
 eval "$(starship init zsh)"
 
@@ -38,5 +38,3 @@ fi
 
 ## vim bindings
 bindkey -v
-
-colorscript random
