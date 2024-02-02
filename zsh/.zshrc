@@ -13,6 +13,8 @@ alias cat="bat"
 alias math="qalc"
 alias n="nvim"
 
+alias bwu="export BW_SESSION=\"\$(bw unlock --passwordfile ~/bitwarden_master_password.txt --raw)\""
+
 export THEOS_DEVICE_IP=192.168.1.186
 
 export PATH=$PATH:/home/rugmj/.cargo/bin
