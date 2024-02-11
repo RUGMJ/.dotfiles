@@ -15,7 +15,7 @@ alias n="nvim"
 
 alias bwu="export BW_SESSION=\"\$(bw unlock --passwordfile ~/bitwarden_master_password.txt --raw)\""
 
-export THEOS_DEVICE_IP=192.168.1.186
+export THEOS_DEVICE_IP=192.168.1.183
 
 export PATH=$PATH:/home/rugmj/.cargo/bin
 
@@ -28,6 +28,10 @@ export GTK_THEME=Adwaita:dark
 export PAGER=bat
 
 eval "$(zoxide init zsh)"
+
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+    eval "$(ssh-agent)"
+fi
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
