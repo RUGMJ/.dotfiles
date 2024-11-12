@@ -1,6 +1,11 @@
 $env.THEOS = "/opt/theos"
 $env.THEOS_DEVICE_IP = "192.168.1.183"
 $env.PAGER = "bat"
+$env.EDITOR = "nvim"
+
+$env.CC = "clang"
+$env.CXX = "clang++"
+
 $env.PNPM_HOME = "/home/rugmj/.local/share/pnpm"
 
 $env.PATH = (

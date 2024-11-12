@@ -17,5 +17,5 @@ alias gp = git push
 
 def mac [...args] {
     let args = $args | str join ' '
-    ssh -p 2222 127.0.0.1 $"source ~/.zshrc && cd /Users/rugmj/linux-root$\(pwd) && ($args)"
+    ssh -p 2222 127.0.0.1 $"source ~/.zshrc && cd /Users/rugmj/linux-root(pwd) && ($args)"
 }
