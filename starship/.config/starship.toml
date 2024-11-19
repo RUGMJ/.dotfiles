@@ -104,3 +104,6 @@ symbol = " "
 
 [spack]
 symbol = "🅢 "
+
+[swift]
+disabled = true
