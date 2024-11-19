@@ -12,6 +12,7 @@ alias ledc="led-controller"
 alias cat="bat"
 alias math="qalc"
 alias n="nvim"
+alias cdtmp="cd \$(mktemp --directory)"
 
 alias bwu="export BW_SESSION=\"\$(bw unlock --passwordfile ~/bitwarden_master_password.txt --raw)\""
 
@@ -44,3 +45,8 @@ fi
 
 ## vim bindings
 bindkey -v
+
+mac ()
+{
+  ssh -p 2222 127.0.0.1 "source ~/.zshrc && cd /Users/rugmj/linux-root$(pwd) && $@"
+}
