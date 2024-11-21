@@ -1,0 +1,21 @@
+[user]
+	email = rugmj@rugmj.dev
+	name = rugmj
+[credential]
+	credentialStore = gpg
+	helper = 
+	helper = /usr/bin/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[core]
+	editor = nvim
+	compression = 9
+	excludesFile = ~/.config/git/ignore
+[rerere]
+	enabled = true
+[maintenance]
+	repo = /home/rugmj/.dotfiles
+[http]
+	postBuffer = 157286400
+[init]
+	defaultBranch = main
