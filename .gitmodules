@@ -4,3 +4,6 @@
 [submodule "led-controller/led-controller"]
 	path = led-controller/led-controller
 	url = https://github.com/RUGMJ/led-controller.git
+[submodule "private-dotfiles"]
+	path = private-dotfiles
+	url = https://github.com/rugmj/private-dotfiles
