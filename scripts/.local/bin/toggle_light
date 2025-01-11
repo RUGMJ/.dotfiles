@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+source ~/.local/bin/ha_auth
+
+curl \
+  -H "Authorization: Bearer $HOME_ASSISTANT_AUTH" \
+  -H "Content-Type: application/json" \
+  -d '{"entity_id": "light.matthews_light"}' \
+  https://ha.rugmj.dev/api/services/light/toggle
