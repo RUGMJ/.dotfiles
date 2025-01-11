@@ -23,3 +23,4 @@ starship init nu | save -f ~/.cache/starship/init.nu
 
 mkdir ~/.cache/zoxide
 zoxide init nushell | save -f ~/.cache/zoxide/init.nu
+source private-env.nu
