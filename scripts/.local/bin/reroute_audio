@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+source ~/.local/bin/ha_auth
+
+curl \
+  -H "Authorization: Bearer $HOME_ASSISTANT_AUTH" \
+  -H "Content-Type: application/json" \
+  -X POST \
+  https://ha.rugmj.dev/api/services/script/reroute_iphone_alexa_to_iphone_rugos_alexa
