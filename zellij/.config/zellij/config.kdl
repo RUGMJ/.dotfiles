@@ -127,6 +127,15 @@ keybinds clear-defaults=true {
             }
             SwitchToMode "locked"
         }
+
+        bind "f" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
+                floating true
+                move_to_focused_tab true
+            }
+
+            SwitchToMode "locked"
+        }
     }
     shared_among "normal" "locked" {
         bind "Alt left" { MoveFocusOrTab "left"; }
@@ -218,8 +227,35 @@ plugins {
     }
     plugin-manager location="zellij:plugin-manager"
     session-manager location="zellij:session-manager"
-    status-bar location="zellij:status-bar" {
+    status-bar location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+        format_left   "{mode} #[fg=#89B4FA,bold]{session}"
+        format_center "{tabs}"
+        format_right  "{datetime}"
+        format_space  ""
 
+        hide_frame_for_single_pane "true"
+
+        mode_locked        "#[bg=#f38ba8,fg=#cdd6f4] "
+        mode_normal        "#[bg=#40a02b,fg=#cdd6f4] "
+        mode_resize        "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_pane          "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_tab           "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_scroll        "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_enter_search  "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_search        "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_rename_tab    "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_rename_pane   "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_session       "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_move          "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_prompt        "#[bg=#40a02b,fg=#cdd6f4] {name} "
+        mode_tmux          "#[bg=#40a02b,fg=#cdd6f4] {name} "
+
+        tab_normal   "#[fg=#6C7086] {name} "
+        tab_active   "#[fg=#9399B2,bold,italic] {name} "
+
+        datetime        "#[fg=#6C7086,bold] {format} "
+        datetime_format "%d %b %Y %H:%M:%S"
+        datetime_timezone "Europe/London"
     }
     strider location="zellij:strider"
     tab-bar location="zellij:tab-bar"
