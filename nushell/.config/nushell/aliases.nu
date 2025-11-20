@@ -19,3 +19,13 @@ def mac [...args] {
     let args = $args | str join ' '
     ssh -p 2222 127.0.0.1 $"source ~/.zshrc && cd /Users/rugmj/linux-root(pwd) && ($args)"
 }
+
+def gh-create [
+    --public
+    --private
+    --name: string
+] {
+    gh repo create --private --source=. --remote=origin
+    git push -u --all
+    gh browse
+}

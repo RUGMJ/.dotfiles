@@ -137,3 +137,7 @@ label:focus {
 #mpd.disconnected {
     background-color: #f53c3c;
 }
+
+#custom-layer-status {
+    margin-right: 10px;
+}

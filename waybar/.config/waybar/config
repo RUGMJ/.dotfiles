@@ -5,6 +5,7 @@
 	"modules-left": ["wlr/workspaces"],
 	"modules-center": [],
 	"modules-right": [
+		"custom/layer-status",
 		"custom/mpris",
 		"pulseaudio",
 		"network",
@@ -38,6 +39,10 @@
 		// "on-scroll-down": "waybar-mpris --send prev",
 		"escape": true,
 		"max-length": 1000
+	},
+	"custom/layer-status": {
+		"return-type": "json",
+		"exec": "/home/rugmj/.cargo/bin/layer-status"
 	},
 	"hyprland/window": {
 		"format": "{}",

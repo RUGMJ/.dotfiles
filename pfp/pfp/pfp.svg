@@ -7,7 +7,7 @@
    viewBox="0 0 300 300"
    version="1.1"
    id="svg5"
-   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    sodipodi:docname="pfp.svg"
    inkscape:export-filename="pfp.png"
    inkscape:export-xdpi="400"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.32"
-     inkscape:cx="1707.8125"
-     inkscape:cy="703.125"
+     inkscape:zoom="0.11313709"
+     inkscape:cx="1171.1456"
+     inkscape:cy="3106.8504"
      inkscape:window-width="1910"
      inkscape:window-height="1040"
      inkscape:window-x="0"
@@ -52,6 +52,15 @@
        height="300"
        id="page1418"
        inkscape:label="triangular" />
+    <inkscape:page
+       x="5.8121014"
+       y="404.81918"
+       width="677.33331"
+       height="381"
+       id="page1"
+       margin="0"
+       bleed="0"
+       inkscape:label="banner" />
   </sodipodi:namedview>
   <defs
      id="defs2">
@@ -176,6 +185,36 @@
         </meshpatch>
       </meshrow>
     </meshgradient>
+    <meshgradient
+       inkscape:collect="always"
+       id="meshgradient1"
+       gradientUnits="userSpaceOnUse"
+       x="18.68619"
+       y="535.28516"
+       gradientTransform="translate(-14.03165,-130.96207)">
+      <meshrow
+         id="meshrow1">
+        <meshpatch
+           id="meshpatch1">
+          <stop
+             path="c 226.549,0  453.099,0  679.648,0"
+             style="stop-color:#26249c;stop-opacity:1"
+             id="stop1" />
+          <stop
+             path="c 0,127.331  0,254.661  0,381.992"
+             style="stop-color:#cabc27;stop-opacity:1"
+             id="stop2" />
+          <stop
+             path="c -226.549,0  -453.099,0  -679.648,0"
+             style="stop-color:#7f08a0;stop-opacity:1"
+             id="stop3" />
+          <stop
+             path="c 0,-127.331  0,-254.661  0,-381.992"
+             style="stop-color:#b52856;stop-opacity:1"
+             id="stop4" />
+        </meshpatch>
+      </meshrow>
+    </meshgradient>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -234,6 +273,13 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:335.948px;font-family:'UbuntuMono Nerd Font';-inkscape-font-specification:'UbuntuMono Nerd Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          x="49.556068"
          y="273.52151">R</tspan></text>
+    <rect
+       style="fill:url(#meshgradient1);fill-opacity:1;stroke:#000000;stroke-width:0"
+       id="rect1"
+       width="679.64844"
+       height="381.99219"
+       x="4.6545372"
+       y="404.32309" />
   </g>
   <script
      id="mesh_polyfill"
